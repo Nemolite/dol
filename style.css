@@ -1,0 +1,11 @@
+/*
+Theme Name:     dol
+Theme URI:      http://sosnyachok.ru/
+Description:    Дочерняя тема для темы accelerate
+Author:         Nemolite (sergey vushnyakov)
+Author URI:     http://vandraren.ru/
+Template:       accelerate
+Version:        1.0.0
+*/
+
+@import url("../accelerate/style.css");
