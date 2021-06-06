@@ -29,4 +29,17 @@ add_action( 'wp_enqueue_scripts', 'dol_scripts_style' );
  */
 
 require 'inc/class-dol.php';
+
+/**
+ * Регистрация меню для раздела документации в сайтбаре
+ */
+
+add_action( 'after_setup_theme', 'school6_register_nav_menu' );
+function school6_register_nav_menu() {	
+
+	register_nav_menu( 'document_sitebar', 'Document Side Bar' );
+
+}
+
+
 ?>
