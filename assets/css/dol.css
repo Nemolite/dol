@@ -66,3 +66,15 @@
   background-color: #fba5ca;
   border-radius: 3px;
 }
+
+.dol-developer-block {
+  width: 50%;
+  height: 40px;
+  float: right;
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+.dol-developer-block a:hover {
+  color: #77cc6d;
+}
