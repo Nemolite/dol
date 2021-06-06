@@ -41,5 +41,24 @@ function school6_register_nav_menu() {
 
 }
 
+/**
+ * Банеры для сайтбара (зеленый)
+ */ 
+require 'inc/sitebar-baners.php';
+
+/**
+ * Банеры для сайтбара (синий)
+ */ 
+require 'inc/sitebar-baners-sky.php';
+
+/**
+ * Банеры для сайтбара (желтый)
+ */ 
+require 'inc/sitebar-baners-sun.php';
+
+/**
+ * Банеры для сайтбара (розовый)
+ */ 
+require 'inc/sitebar-baners-rosa.php';
 
 ?>
