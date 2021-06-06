@@ -97,4 +97,53 @@ if ( ! function_exists( 'dol_footer_copyright' ) ) :
 
 endif;
 
+/**
+ * Top section
+ */
+
+add_action( 'dol_action_top_section', 'dol_top_section', 10 );
+/**
+ * function to show the footer info, copyright information
+ */
+if ( ! function_exists( 'dol_top_section' ) ) :
+
+	function dol_top_section() {
+
+		get_template_part( 'inc/top','section' ); 
+	}
+
+endif;
+
+/**
+ * Объявления для Top section
+ */
+
+add_action('init', 'dol_top_section_info');
+function dol_top_section_info(){
+	$labels = array(
+		'name'               => 'Объявление', 
+		'singular_name'      => 'Объявления', 
+		'add_new'            => 'Добавить новое',
+		'add_new_item'       => 'Добавить новое объявление',
+		'edit_item'          => 'Редактировать объявление',
+		'new_item'           => 'Новое объявление',
+		'view_item'          => 'Посмотреть объявление',
+		'search_items'       => 'Найти объявление',
+		'not_found'          => 'Объявление не найдено',
+		'not_found_in_trash' => 'В корзине объявление не найдено',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Объявления'
+	  );
+	 
+	  $args = array(
+		'labels' => $labels,
+		'public' => true, // 
+		'show_ui' => true, 
+		'has_archive' => true, 
+		'menu_icon' => 'dashicons-media-document', 
+		'menu_position' => 20, 
+		'supports' => array( 'title', 'editor' )
+	);	
+	register_post_type('top_section_info', $args  );
+}
 ?>
