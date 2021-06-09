@@ -6,7 +6,11 @@
 
 <div id="main" class="clearfix">
 	<div class="inner-wrap clearfix">
+        <div class="plagin-block">
+        <?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
+        </div>  
         <div class="block-top-section">
+        
             <div class="top-section-left">
             <?php 
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;	
