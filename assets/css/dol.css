@@ -107,3 +107,13 @@
   border: 1px solid #fff;
   float: left;
 }
+
+.plagin-block {
+  position: absolute;
+  width: 270px;
+  height: 42px;
+  background-color: #7aa4cc;
+  margin-top: -42px;
+  right: 0;
+  margin-right: 110px;
+}
